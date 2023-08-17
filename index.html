@@ -8,13 +8,48 @@
     <link rel="stylesheet" href="styles.css" class="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#ecf2f7] flex items-center justify-center min-h-screen flex-col">
-    <img src="https://neluttu.github.io/gift-membership/gift.png" class="max-w-[160px]">
-    <h1 class="mt-10 text-3xl font-semibold text-[#2b2f49]">Select a gift membership</h1>
+<body class="bg-[#ecf2f7] flex items-center justify-center min-h-screen font-nunito text-slate-600">
+    <section class="max-w-[968px] w-full mx-4 
+    mx-4 ">
+        <p class="flex justify-center w-full">
+            <img src="https://neluttu.github.io/gift-membership/gift.png" class="max-w-[100px]">
+        </p>
+        <h1 class="mx-2 my-10 text-2xl font-semibold text-center sm:text-3xl">Select a gift membership</h1>
+        <ul class="w-full bg-white p-8 rounded-lg gap-3 flex items-start justify-center shadow-[0px_10px_15px_9px_#DDE4F1] flex-col sm:flex-row mb-10">
+            <li class="pr-4 grow">
+                <h2 class="mb-3 text-xl font-[800] mt-3">U.S. Discovery</h2>
+                <p class="max-w-lg text-lg">Your friends or family members can explore their American roots with access to billions of records from all 50 states.</p>
+            </li>
+            <li class="bg-[#f4faff] px-4 rounded-md min-w-[240px] self-stretch flex items-start justify-center flex-col">
+                <label for="six" class="flex items-center justify-start w-full gap-0 p-3 font-semibold cursor-pointer">
+                    <input type="radio" class="w-[20px] aspect-square" name="period" id="six"> <span class="inline-block pl-3 text-xl">$99 <span class="text-sm text-slate-800">/ 6 months</span></span>
+                </label>
+                <label for="twelve" class="flex items-center justify-start w-full gap-2 p-3 font-semibold cursor-pointer">
+                    <input type="radio" class="w-[20px] aspect-square" name="period" id="twelve" checked> <span class="text-xl">$189 <span class="text-sm text-slate-800">/ 12 months</span></span>
+                </label>
+            </li>
+        </ul>
+
+        <ul class="w-full bg-white p-8  rounded-lg gap-3 flex items-start justify-center shadow-[0px_10px_15px_9px_#DDE4F1] flex-col sm:flex-row relative overflow-hidden">
+            <li class="pr-4 overflow-hidden grow">
+                <span class="absolute slide-in-top bg-gradient-to-r from-[#6c73ff] to-[#676bbe] text-white px-24 py-[4px] rounded-br-lg left-0 top-0 text-sm">Most Popular</span>    
+                <h2 class="mb-3 text-xl font-[800] mt-3">World Explorer</h2>
+                <p class="max-w-lg text-lg">Recipients will be able to search for U.S. and international family with access to billions of records from 80+ countries.</p>
+            </li>
+            <li class="bg-[#f4faff] px-4 rounded-md min-w-[240px] self-stretch flex items-start justify-center flex-col">
+                <label for="six" class="flex items-center justify-start w-full gap-0 p-3 font-semibold cursor-pointer">
+                    <input type="radio" class="w-[20px] aspect-square" name="period" id="six"> <span class="inline-block pl-3 text-xl">$99 <span class="text-sm text-slate-800">/ 6 months</span></span>
+                </label>
+                <label for="twelve" class="flex items-center justify-start w-full gap-2 p-3 font-semibold cursor-pointer">
+                    <input type="radio" class="w-[20px] aspect-square" name="period" id="twelve" checked> <span class="text-xl">$189 <span class="text-sm text-slate-800">/ 12 months</span></span>
+                </label>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>
